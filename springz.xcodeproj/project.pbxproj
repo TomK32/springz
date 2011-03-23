@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0EF0CA9B133A0570001CCA0B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF0CA9A133A0570001CCA0B /* Cocoa.framework */; };
+		0EF0CA9D133A0570001CCA0B /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF0CA9C133A0570001CCA0B /* MacRuby.framework */; };
+		0EF0CAA4133A0570001CCA0B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0EF0CAA2133A0570001CCA0B /* InfoPlist.strings */; };
+		0EF0CAA7133A0570001CCA0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF0CAA6133A0570001CCA0B /* main.m */; };
+		0EF0CAAB133A0571001CCA0B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EF0CAA9133A0571001CCA0B /* MainMenu.xib */; };
+		0EF0CAAE133A0571001CCA0B /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 0EF0CAAD133A0571001CCA0B /* rb_main.rb */; };
+		0EF0CAB0133A0571001CCA0B /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 0EF0CAAF133A0571001CCA0B /* AppDelegate.rb */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0EF0CA96133A0570001CCA0B /* springz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = springz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EF0CA9A133A0570001CCA0B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		0EF0CA9C133A0570001CCA0B /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = System/Library/Frameworks/MacRuby.framework; sourceTree = SDKROOT; };
+		0EF0CAA1133A0570001CCA0B /* springz-Info.plist */ = {isa = PBXFileReference; path = "springz-Info.plist"; sourceTree = "<group>"; };
+		0EF0CAA3133A0570001CCA0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0EF0CAA5133A0570001CCA0B /* springz-Prefix.pch */ = {isa = PBXFileReference; path = "springz-Prefix.pch"; sourceTree = "<group>"; };
+		0EF0CAA6133A0570001CCA0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0EF0CAAA133A0571001CCA0B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		0EF0CAAD133A0571001CCA0B /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
+		0EF0CAAF133A0571001CCA0B /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0EF0CA93133A0570001CCA0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EF0CA9B133A0570001CCA0B /* Cocoa.framework in Frameworks */,
+				0EF0CA9D133A0570001CCA0B /* MacRuby.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0EF0CA8B133A0570001CCA0B = {
+			isa = PBXGroup;
+			children = (
+				0EF0CA9F133A0570001CCA0B /* springz */,
+				0EF0CA99133A0570001CCA0B /* Frameworks */,
+				0EF0CA97133A0570001CCA0B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0EF0CA97133A0570001CCA0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0EF0CA96133A0570001CCA0B /* springz.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0EF0CA99133A0570001CCA0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0EF0CA9A133A0570001CCA0B /* Cocoa.framework */,
+				0EF0CA9C133A0570001CCA0B /* MacRuby.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0EF0CA9F133A0570001CCA0B /* springz */ = {
+			isa = PBXGroup;
+			children = (
+				0EF0CAAF133A0571001CCA0B /* AppDelegate.rb */,
+				0EF0CAA8133A0571001CCA0B /* Resources */,
+				0EF0CAAC133A0571001CCA0B /* Other Sources */,
+				0EF0CAA0133A0570001CCA0B /* Supporting Files */,
+			);
+			path = springz;
+			sourceTree = "<group>";
+		};
+		0EF0CAA0133A0570001CCA0B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0EF0CAA1133A0570001CCA0B /* springz-Info.plist */,
+				0EF0CAA2133A0570001CCA0B /* InfoPlist.strings */,
+				0EF0CAA5133A0570001CCA0B /* springz-Prefix.pch */,
+				0EF0CAA6133A0570001CCA0B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0EF0CAA8133A0571001CCA0B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0EF0CAA9133A0571001CCA0B /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0EF0CAAC133A0571001CCA0B /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0EF0CAAD133A0571001CCA0B /* rb_main.rb */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		0EF0CA9E133A0570001CCA0B /* Deployment */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "--compile --embed";
+			buildConfigurationList = 0EF0CAB6133A0571001CCA0B /* Build configuration list for PBXLegacyTarget "Deployment" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/local/bin/macruby_deploy;
+			dependencies = (
+			);
+			name = Deployment;
+			passBuildSettingsInEnvironment = 1;
+			productName = Deployment;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		0EF0CA95133A0570001CCA0B /* springz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EF0CAB3133A0571001CCA0B /* Build configuration list for PBXNativeTarget "springz" */;
+			buildPhases = (
+				0EF0CA92133A0570001CCA0B /* Sources */,
+				0EF0CA93133A0570001CCA0B /* Frameworks */,
+				0EF0CA94133A0570001CCA0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = springz;
+			productName = springz;
+			productReference = 0EF0CA96133A0570001CCA0B /* springz.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0EF0CA8D133A0570001CCA0B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Ananasblau.com;
+			};
+			buildConfigurationList = 0EF0CA90133A0570001CCA0B /* Build configuration list for PBXProject "springz" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0EF0CA8B133A0570001CCA0B;
+			productRefGroup = 0EF0CA97133A0570001CCA0B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0EF0CA95133A0570001CCA0B /* springz */,
+				0EF0CA9E133A0570001CCA0B /* Deployment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0EF0CA94133A0570001CCA0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EF0CAA4133A0570001CCA0B /* InfoPlist.strings in Resources */,
+				0EF0CAAB133A0571001CCA0B /* MainMenu.xib in Resources */,
+				0EF0CAAE133A0571001CCA0B /* rb_main.rb in Resources */,
+				0EF0CAB0133A0571001CCA0B /* AppDelegate.rb in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0EF0CA92133A0570001CCA0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EF0CAA7133A0570001CCA0B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0EF0CAA2133A0570001CCA0B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0EF0CAA3133A0570001CCA0B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0EF0CAA9133A0571001CCA0B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0EF0CAAA133A0571001CCA0B /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0EF0CAB1133A0571001CCA0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0EF0CAB2133A0571001CCA0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0EF0CAB4133A0571001CCA0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "springz/springz-Prefix.pch";
+				INFOPLIST_FILE = "springz/springz-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0EF0CAB5133A0571001CCA0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "springz/springz-Prefix.pch";
+				INFOPLIST_FILE = "springz/springz-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0EF0CAB7133A0571001CCA0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		0EF0CAB8133A0571001CCA0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0EF0CA90133A0570001CCA0B /* Build configuration list for PBXProject "springz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EF0CAB1133A0571001CCA0B /* Debug */,
+				0EF0CAB2133A0571001CCA0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0EF0CAB3133A0571001CCA0B /* Build configuration list for PBXNativeTarget "springz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EF0CAB4133A0571001CCA0B /* Debug */,
+				0EF0CAB5133A0571001CCA0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0EF0CAB6133A0571001CCA0B /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EF0CAB7133A0571001CCA0B /* Debug */,
+				0EF0CAB8133A0571001CCA0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0EF0CA8D133A0570001CCA0B /* Project object */;
+}
