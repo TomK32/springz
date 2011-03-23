@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E13CF8C133A23B90073DE1B /* Stone.rb in Resources */ = {isa = PBXBuildFile; fileRef = 0E13CF8B133A23B90073DE1B /* Stone.rb */; };
+		0E838B21133A1060009C1557 /* SpringzGameController.rb in Resources */ = {isa = PBXBuildFile; fileRef = 0E838B20133A1060009C1557 /* SpringzGameController.rb */; };
+		0E838B24133A10FE009C1557 /* SpringzGameView.rb in Resources */ = {isa = PBXBuildFile; fileRef = 0E838B23133A10FE009C1557 /* SpringzGameView.rb */; };
 		0EF0CA9B133A0570001CCA0B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF0CA9A133A0570001CCA0B /* Cocoa.framework */; };
 		0EF0CA9D133A0570001CCA0B /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF0CA9C133A0570001CCA0B /* MacRuby.framework */; };
 		0EF0CAA4133A0570001CCA0B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0EF0CAA2133A0570001CCA0B /* InfoPlist.strings */; };
@@ -17,12 +20,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E13CF8B133A23B90073DE1B /* Stone.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = Stone.rb; sourceTree = "<group>"; };
+		0E838B20133A1060009C1557 /* SpringzGameController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = SpringzGameController.rb; sourceTree = "<group>"; };
+		0E838B23133A10FE009C1557 /* SpringzGameView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = SpringzGameView.rb; sourceTree = "<group>"; };
 		0EF0CA96133A0570001CCA0B /* springz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = springz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EF0CA9A133A0570001CCA0B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		0EF0CA9C133A0570001CCA0B /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = System/Library/Frameworks/MacRuby.framework; sourceTree = SDKROOT; };
-		0EF0CAA1133A0570001CCA0B /* springz-Info.plist */ = {isa = PBXFileReference; path = "springz-Info.plist"; sourceTree = "<group>"; };
+		0EF0CAA1133A0570001CCA0B /* springz-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "springz-Info.plist"; sourceTree = "<group>"; };
 		0EF0CAA3133A0570001CCA0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0EF0CAA5133A0570001CCA0B /* springz-Prefix.pch */ = {isa = PBXFileReference; path = "springz-Prefix.pch"; sourceTree = "<group>"; };
+		0EF0CAA5133A0570001CCA0B /* springz-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "springz-Prefix.pch"; sourceTree = "<group>"; };
 		0EF0CAA6133A0570001CCA0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0EF0CAAA133A0571001CCA0B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		0EF0CAAD133A0571001CCA0B /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
@@ -72,6 +78,9 @@
 			isa = PBXGroup;
 			children = (
 				0EF0CAAF133A0571001CCA0B /* AppDelegate.rb */,
+				0E838B20133A1060009C1557 /* SpringzGameController.rb */,
+				0E838B23133A10FE009C1557 /* SpringzGameView.rb */,
+				0E13CF8B133A23B90073DE1B /* Stone.rb */,
 				0EF0CAA8133A0571001CCA0B /* Resources */,
 				0EF0CAAC133A0571001CCA0B /* Other Sources */,
 				0EF0CAA0133A0570001CCA0B /* Supporting Files */,
@@ -177,6 +186,9 @@
 				0EF0CAAB133A0571001CCA0B /* MainMenu.xib in Resources */,
 				0EF0CAAE133A0571001CCA0B /* rb_main.rb in Resources */,
 				0EF0CAB0133A0571001CCA0B /* AppDelegate.rb in Resources */,
+				0E838B21133A1060009C1557 /* SpringzGameController.rb in Resources */,
+				0E838B24133A10FE009C1557 /* SpringzGameView.rb in Resources */,
+				0E13CF8C133A23B90073DE1B /* Stone.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +320,7 @@
 				0EF0CAB5133A0571001CCA0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0EF0CAB6133A0571001CCA0B /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
 			isa = XCConfigurationList;
@@ -316,6 +329,7 @@
 				0EF0CAB8133A0571001CCA0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
