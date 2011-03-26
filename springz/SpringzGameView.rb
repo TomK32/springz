@@ -14,9 +14,30 @@ class SpringzGameView < NSView
     super(frame)
   end
 
+  def withContext(&block)
+    context = NSGraphicsContext.currentContext
+    context.saveGraphicsState
+    yield
+    context.restoreGraphicsState
+  end
+
   def drawRect rect
     NSColor.brownColor.set
     NSRectFill(bounds)
+    self.game.stones.each do |stone|
+      withContext do
+        stone.color.set
+        NSBezierPath.bezierPathWithOvalInRect(stone.rect).fill
+        NSColor.blackColor.colorWithAlphaComponent(0.5).set
+        NSBezierPath.bezierPathWithOvalInRect(stone.rect_for_knob).fill
+      end
+    end
   end
-  
+
+
+
+  def mouseUp event
+    point = convertPoint event.locationInWindow, fromView:nil
+    game.remove_stones(point)
+  end
 end

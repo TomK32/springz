@@ -8,22 +8,40 @@
 
 class Stone
   attr_accessor :color
+  attr_accessor :size
   attr_accessor :lng
   attr_accessor :lat
-  
-  def new
-    
+
+  def initialize(position = [0,0], color = NSColor.whiteColor, size = 10)
+    self.color = color
+    self.size = size
+    self.lng, self.lat = position
   end
-  
-  def drawRect rect
-    
-    dotRect = NSRect.new
-    dotRect.origin.x = @center.x - @radius
-    dotRect.origin.y = @center.y - @radius
-    dotRect.size.width  = 2 * @radius
-    dotRect.size.height = 2 * @radius
-    
-    @color.set
-    NSBezierPath.bezierPathWithOvalInRect(dotRect).fill
+
+  def rect
+    rect = NSRect.new
+    rect.origin.x = lat - size
+    rect.origin.y = lng - size
+    rect.size.width  = 2 * size
+    rect.size.height = 2 * size
+    rect
+  end
+
+  def rect_for_knob
+    knob_size = [10, size/3*2].min
+    rect = NSRect.new
+    rect.origin.x = lat - knob_size/2
+    rect.origin.y = lng - knob_size/2
+    rect.size.width  = knob_size
+    rect.size.height = knob_size
+    rect
+  end
+
+  def distance(other)
+    # all circles, easy peasy :)
+    Math.sqrt((other.x - lat)**2 + (other.y.to_f - lng)**2)
+  end
+  def hit?(point)
+    distance(point) < size
   end
 end

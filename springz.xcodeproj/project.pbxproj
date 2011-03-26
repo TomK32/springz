@@ -12,7 +12,6 @@
 		0E38B5BF133E31AB00968524 /* Player.rb in Resources */ = {isa = PBXBuildFile; fileRef = 0E38B5BE133E31AB00968524 /* Player.rb */; };
 		0E838B21133A1060009C1557 /* SpringzGameController.rb in Resources */ = {isa = PBXBuildFile; fileRef = 0E838B20133A1060009C1557 /* SpringzGameController.rb */; };
 		0E838B24133A10FE009C1557 /* SpringzGameView.rb in Resources */ = {isa = PBXBuildFile; fileRef = 0E838B23133A10FE009C1557 /* SpringzGameView.rb */; };
-		0EC69538133E75ED003E658B /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC69537133E75EC003E658B /* Quartz.framework */; };
 		0EF0CA9B133A0570001CCA0B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF0CA9A133A0570001CCA0B /* Cocoa.framework */; };
 		0EF0CA9D133A0570001CCA0B /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF0CA9C133A0570001CCA0B /* MacRuby.framework */; };
 		0EF0CAA4133A0570001CCA0B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0EF0CAA2133A0570001CCA0B /* InfoPlist.strings */; };
@@ -28,7 +27,6 @@
 		0E38B5BE133E31AB00968524 /* Player.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = Player.rb; sourceTree = "<group>"; };
 		0E838B20133A1060009C1557 /* SpringzGameController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = SpringzGameController.rb; sourceTree = "<group>"; };
 		0E838B23133A10FE009C1557 /* SpringzGameView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = SpringzGameView.rb; sourceTree = "<group>"; };
-		0EC69537133E75EC003E658B /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		0EF0CA96133A0570001CCA0B /* springz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = springz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EF0CA9A133A0570001CCA0B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		0EF0CA9C133A0570001CCA0B /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = System/Library/Frameworks/MacRuby.framework; sourceTree = SDKROOT; };
@@ -46,7 +44,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EC69538133E75ED003E658B /* Quartz.framework in Frameworks */,
 				0EF0CA9B133A0570001CCA0B /* Cocoa.framework in Frameworks */,
 				0EF0CA9D133A0570001CCA0B /* MacRuby.framework in Frameworks */,
 			);
@@ -58,7 +55,6 @@
 		0EF0CA8B133A0570001CCA0B = {
 			isa = PBXGroup;
 			children = (
-				0EC69537133E75EC003E658B /* Quartz.framework */,
 				0EF0CA9F133A0570001CCA0B /* springz */,
 				0EF0CA99133A0570001CCA0B /* Frameworks */,
 				0EF0CA97133A0570001CCA0B /* Products */,
@@ -274,6 +270,11 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Box2D.framework/Library/Frameworks\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_ENABLE_OBJC_GC = required;
@@ -291,6 +292,11 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Box2D.framework/Library/Frameworks\"",
+				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_ENABLE_OBJC_GC = required;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

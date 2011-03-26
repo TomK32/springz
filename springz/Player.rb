@@ -16,7 +16,7 @@ class Player
     self.score = 0
   end
 
-  def increase_score(n = 1)
+  def increment_score(n = 1)
     self.score += n
   end
 end
