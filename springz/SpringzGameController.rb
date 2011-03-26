@@ -9,6 +9,8 @@
 class SpringzGameController
   attr_accessor :game_view
   attr_accessor :stones
+  attr_accessor :players
+  attr_accessor :scores
   
   def awakeFromNib
     stones << Stone.new
