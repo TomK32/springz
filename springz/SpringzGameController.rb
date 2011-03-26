@@ -28,11 +28,15 @@ class SpringzGameController
 
   def remove_stones(point)
     hits = stones.select{|stone| stone.hit?(point) }
-    return if hits.empty?
+    next_player and return if hits.empty?
     self.stones -= hits
     current_player.increment_score(hits.collect(&:size).inject{|sum,n| sum+=n })
     game_view.setNeedsDisplay true
     scores.setNeedsDisplay true
+  end
+  
+  def next_player
+    self.current_player = self.players[(1+self.players.index(current_player)) % players.size]
   end
 end
 
