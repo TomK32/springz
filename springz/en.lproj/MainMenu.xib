@@ -252,7 +252,7 @@
 						<object class="NSCustomView" id="53220321">
 							<reference key="NSNextResponder" ref="439893737"/>
 							<int key="NSvFlags">274</int>
-							<string key="NSFrameSize">{480, 360}</string>
+							<string key="NSFrame">{{0, 35}, {480, 325}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSNextKeyView" ref="858863280"/>
 							<bool key="NSViewIsLayerTreeHost">YES</bool>
@@ -262,7 +262,7 @@
 						<object class="NSCustomView" id="858863280">
 							<reference key="NSNextResponder" ref="439893737"/>
 							<int key="NSvFlags">290</int>
-							<string key="NSFrame">{{0, 1}, {480, 36}}</string>
+							<string key="NSFrameSize">{480, 36}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<bool key="NSViewIsLayerTreeHost">YES</bool>
 							<int key="NSViewLayerContentsRedrawPolicy">2</int>

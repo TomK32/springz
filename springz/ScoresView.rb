@@ -21,23 +21,26 @@ class ScoresView < NSView
   end
 
   def drawRect rect
+    #    gradient = NSGradient.alloc.initWithColors([NSColor.grayColor, NSColor.blackColor])
+    NSColor.grayColor.set
+    NSRectFill(rect)
+
     return if game.players.empty?
     width = (rect.size.width-20) / game.players.size
-
+    pos_y = 5
 
     withContext do
-      font = NSFont.fontWithName("Helvetica", size:24)
+      font = NSFont.fontWithName("Helvetica", size:20)
       attributes = {NSFontAttributeName => font, NSForegroundColorAttributeName => NSColor.whiteColor}
       
       shadow = NSShadow.alloc.init
-      shadow.shadowOffset = [4, -4]
+      shadow.shadowOffset = [2, -2]
       shadow.set
       game.players.each_with_index do |player, index|
-        player.name.drawAtPoint([width*index+10, rect.size.height/3],
+        player.name.drawAtPoint([width*index+10, pos_y],
                           withAttributes: attributes)
-        player.score.to_s.drawAtPoint([(width*(index+1)-30), rect.size.height/3],
+        player.score.to_s.drawAtPoint([(width*(index+1)-30), pos_y],
                                       withAttributes: attributes)
-        # TODO draw player name and score
       end
     end
   end

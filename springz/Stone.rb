@@ -7,12 +7,23 @@
 #
 
 class Stone
-  attr_accessor :path
+  attr_accessor :color
+  attr_accessor :lng
+  attr_accessor :lat
   
   def new
     
   end
   
   def drawRect rect
+    
+    dotRect = NSRect.new
+    dotRect.origin.x = @center.x - @radius
+    dotRect.origin.y = @center.y - @radius
+    dotRect.size.width  = 2 * @radius
+    dotRect.size.height = 2 * @radius
+    
+    @color.set
+    NSBezierPath.bezierPathWithOvalInRect(dotRect).fill
   end
 end

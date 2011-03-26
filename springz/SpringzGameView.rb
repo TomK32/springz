@@ -16,7 +16,7 @@ class SpringzGameView < NSView
 
   def drawRect rect
     NSColor.brownColor.set
-    NSBezierPath.fillRect(rect)
+    NSRectFill(bounds)
   end
   
 end
