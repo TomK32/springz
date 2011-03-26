@@ -9,10 +9,14 @@
 
 class SpringzGameView < NSView
   attr_accessor :game
+
   def initWithFrame frame
     super(frame)
   end
+
   def drawRect rect
+    NSColor.brownColor.set
+    NSBezierPath.fillRect(rect)
   end
   
 end

@@ -13,7 +13,9 @@ class SpringzGameController
   attr_accessor :scores
   
   def awakeFromNib
-    stones << Stone.new
+    self.stones ||= []
+    self.players ||= [Player.new('Player 1'), Player.new('Player 2')]
+    self.stones << Stone.new
   end
 end
 

@@ -252,27 +252,30 @@
 						<object class="NSCustomView" id="53220321">
 							<reference key="NSNextResponder" ref="439893737"/>
 							<int key="NSvFlags">274</int>
-							<object class="NSMutableArray" key="NSSubviews">
-								<bool key="EncodedWithXMLCoder">YES</bool>
-								<object class="NSCustomView" id="858863280">
-									<reference key="NSNextResponder" ref="53220321"/>
-									<int key="NSvFlags">290</int>
-									<string key="NSFrameSize">{480, 36}</string>
-									<reference key="NSSuperview" ref="53220321"/>
-									<string key="NSClassName">ScoresView</string>
-								</object>
-							</object>
 							<string key="NSFrameSize">{480, 360}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSNextKeyView" ref="858863280"/>
+							<bool key="NSViewIsLayerTreeHost">YES</bool>
+							<int key="NSViewLayerContentsRedrawPolicy">2</int>
 							<string key="NSClassName">SpringzGameView</string>
+						</object>
+						<object class="NSCustomView" id="858863280">
+							<reference key="NSNextResponder" ref="439893737"/>
+							<int key="NSvFlags">290</int>
+							<string key="NSFrame">{{0, 1}, {480, 36}}</string>
+							<reference key="NSSuperview" ref="439893737"/>
+							<bool key="NSViewIsLayerTreeHost">YES</bool>
+							<int key="NSViewLayerContentsRedrawPolicy">2</int>
+							<string key="NSClassName">ScoresView</string>
 						</object>
 					</object>
 					<string key="NSFrame">{{7, 11}, {480, 360}}</string>
 					<reference key="NSSuperview"/>
 					<reference key="NSNextKeyView" ref="53220321"/>
+					<bool key="NSViewIsLayerTreeHost">YES</bool>
+					<int key="NSViewLayerContentsRedrawPolicy">2</int>
 				</object>
-				<string key="NSScreenRect">{{0, 0}, {1920, 1178}}</string>
+				<string key="NSScreenRect">{{0, 0}, {1440, 878}}</string>
 				<string key="NSMinSize">{480, 382}</string>
 				<string key="NSMaxSize">{1e+13, 1e+13}</string>
 			</object>
@@ -561,6 +564,7 @@
 						<reference key="object" ref="439893737"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<reference ref="858863280"/>
 							<reference ref="53220321"/>
 						</object>
 						<reference key="parent" ref="972006081"/>
@@ -599,23 +603,22 @@
 						<reference key="parent" ref="0"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">533</int>
-						<reference key="object" ref="53220321"/>
-						<object class="NSMutableArray" key="children">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="858863280"/>
-						</object>
-						<reference key="parent" ref="439893737"/>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">534</int>
 						<reference key="object" ref="464606751"/>
 						<reference key="parent" ref="0"/>
 					</object>
 					<object class="IBObjectRecord">
+						<int key="objectID">533</int>
+						<reference key="object" ref="53220321"/>
+						<object class="NSMutableArray" key="children">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+						</object>
+						<reference key="parent" ref="439893737"/>
+					</object>
+					<object class="IBObjectRecord">
 						<int key="objectID">545</int>
 						<reference key="object" ref="858863280"/>
-						<reference key="parent" ref="53220321"/>
+						<reference key="parent" ref="439893737"/>
 					</object>
 				</object>
 			</object>
@@ -768,7 +771,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">548</int>
+			<int key="maxID">550</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes"/>
 		<int key="IBDocument.localizationMode">0</int>
