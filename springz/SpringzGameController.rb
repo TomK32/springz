@@ -13,26 +13,23 @@ class SpringzGameController
   attr_accessor :scores
   
   def awakeFromNib
-    self.players ||= [Player.new('Player 1'), Player.new('Player 2')]
+    self.players ||= [Player.new('Player 1'), Player.new('Player 2'), Player.new('Thomas')]
     self.current_player = self.players.first
     self.stones ||= []
-    5.times { self.stones << Stone.new(random_position, NSColor.yellowColor, 10) }
-    5.times { self.stones << Stone.new(random_position, NSColor.blueColor, 20) }
-    5.times { self.stones << Stone.new(random_position, NSColor.redColor, 30) }
+    5.times { self.stones << Stone.new_with_distribution(game_view, self.stones, NSColor.yellowColor, 10) }
+    5.times { self.stones << Stone.new_with_distribution(game_view, self.stones, NSColor.blueColor, 20) }
+    5.times { self.stones << Stone.new_with_distribution(game_view, self.stones, NSColor.redColor, 30) }
 
-  end
-
-  def random_position
-    [rand(self.game_view.frame.size.height), rand(self.game_view.frame.size.width)]
   end
 
   def remove_stones(point)
+    game_view.setNeedsDisplay true
+    scores.setNeedsDisplay true
+
     hits = stones.select{|stone| stone.hit?(point) }
     next_player and return if hits.empty?
     self.stones -= hits
     current_player.increment_score(hits.collect(&:size).inject{|sum,n| sum+=n })
-    game_view.setNeedsDisplay true
-    scores.setNeedsDisplay true
   end
   
   def next_player
