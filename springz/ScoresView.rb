@@ -26,21 +26,26 @@ class ScoresView < NSView
     NSRectFill(rect)
 
     return if game.players.empty?
-    width = (rect.size.width-20) / game.players.size
+    width = (rect.size.width) / game.players.size
     pos_y = 5
 
-    withContext do
-      font = NSFont.fontWithName("Helvetica", size:20)
-      attributes = {NSFontAttributeName => font, NSForegroundColorAttributeName => NSColor.whiteColor}
-      
-      shadow = NSShadow.alloc.init
-      shadow.shadowOffset = [2, -2]
-      shadow.set
-      game.players.each_with_index do |player, index|
+    font = NSFont.fontWithName("Helvetica", size:20)
+    attributes = {NSFontAttributeName => font, NSForegroundColorAttributeName => NSColor.whiteColor}
+    
+    shadow = NSShadow.alloc.init
+    game.players.each_with_index do |player, index|
+      if player == game.current_player
+        NSColor.greenColor.colorWithAlphaComponent(0.05).set
+        NSRectFill(NSRect.new([width*index+3, 3], [width-6, rect.size.height-6]))
+      end
+      withContext do
+        shadow.shadowOffset = [2, -2]
+        shadow.set
         player.name.drawAtPoint([width*index+10, pos_y],
                           withAttributes: attributes)
-        player.score.to_s.drawAtPoint([(width*(index+1)-30), pos_y],
+        player.score.to_s.drawAtPoint([(width*(index+1)-45), pos_y],
                                       withAttributes: attributes)
+        # TODO NSRightTextAlignment
       end
     end
   end
